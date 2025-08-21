@@ -13,6 +13,7 @@ function App() {
               <span className="sr-only">Utocoin</span>
               <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" className="h-8 w-auto" />
             </a>
+            
             {/* <p className="h-8 w-auto">Utocoin</p> */}
           </div>
           <div className="flex lg:hidden">
