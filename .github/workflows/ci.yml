@@ -1,0 +1,16 @@
+name: CI
+on:
+    - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a simple script
+        run: echo "Hello, World!"
+  with-lable:
+    runs-on: ubuntu-latest
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'full_platforms') }}
+    steps:
+        - name: Run a extra script
+          run: echo "Extra"
